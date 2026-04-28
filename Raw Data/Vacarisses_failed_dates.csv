@@ -1,0 +1,47 @@
+date,error
+1996-03-09,Less than 3 tables found
+1996-03-10,Less than 3 tables found
+1996-03-11,Less than 3 tables found
+1996-03-12,Less than 3 tables found
+1996-03-13,Less than 3 tables found
+1998-07-18,Less than 3 tables found
+1998-07-19,Less than 3 tables found
+1998-07-20,Less than 3 tables found
+1999-09-30,Less than 3 tables found
+1999-10-02,Less than 3 tables found
+1999-10-03,Less than 3 tables found
+1999-10-04,Less than 3 tables found
+1999-10-05,Less than 3 tables found
+1999-10-06,Less than 3 tables found
+1999-10-07,Less than 3 tables found
+1999-10-08,Less than 3 tables found
+1999-10-09,Less than 3 tables found
+1999-10-10,Less than 3 tables found
+1999-10-11,Less than 3 tables found
+1999-10-12,Less than 3 tables found
+1999-10-13,Less than 3 tables found
+1999-10-14,Less than 3 tables found
+2000-10-01,Less than 3 tables found
+2000-10-02,Less than 3 tables found
+2000-10-03,Less than 3 tables found
+2000-10-06,Less than 3 tables found
+2000-10-07,Less than 3 tables found
+2000-10-08,Less than 3 tables found
+2000-10-09,Less than 3 tables found
+2000-10-10,Less than 3 tables found
+2000-10-18,Less than 3 tables found
+2001-07-22,Less than 3 tables found
+2002-09-01,Less than 3 tables found
+2002-09-02,Less than 3 tables found
+2003-07-17,Less than 3 tables found
+2005-08-04,Less than 3 tables found
+2005-08-05,Less than 3 tables found
+2005-08-06,Less than 3 tables found
+2005-09-10,Less than 3 tables found
+2007-06-28,Less than 3 tables found
+2007-06-29,Less than 3 tables found
+2007-08-01,503 Server Error: Service Unavailable for url: https://www.meteo.cat/observacions/xema/dades?codi=D2&dia=2007-08-01T00:00Z
+2007-08-02,503 Server Error: Service Unavailable for url: https://www.meteo.cat/observacions/xema/dades?codi=D2&dia=2007-08-02T00:00Z
+2007-08-05,503 Server Error: Service Unavailable for url: https://www.meteo.cat/observacions/xema/dades?codi=D2&dia=2007-08-05T00:00Z
+2007-08-07,"HTTPSConnectionPool(host='www.meteo.cat', port=443): Read timed out. (read timeout=20)"
+2007-09-30,"HTTPSConnectionPool(host='www.meteo.cat', port=443): Read timed out. (read timeout=20)"

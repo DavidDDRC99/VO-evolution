@@ -8,3 +8,10 @@ Yes: Preserve repo conventions and boundaries; avoid introducing new flows or to
 Yes: Use executable search tools (Glob and Grep via rg) and parallelize file reads to speed up context gathering.
 Yes: When editing or adding guidance, keep changes minimal and targeted; prefer patches over large rewrites.
 Yes: If a plan or decision is ambiguous, ask a clarifying question before implementing changes; use the designated question tool for a concise batch if needed.
+
+## Statistical tests module (added 2026-05-16)
+
+- `scripts/statistical_tests.py` — Reusable module with Mann-Kendall trend test, Sen's slope estimator, Pettitt change-point detection, and seasonal MK.
+- `scripts/inject_stat_tests.py` — Injects statistical analysis cells into notebooks.
+- To add stat tests to all notebooks: `python scripts/inject_stat_tests.py` from project root.
+- Notebooks modified: Rain_seasons, Hourly_rain_analysis, Intensity_pluja, Evolucio_temperatures_nocturnes.

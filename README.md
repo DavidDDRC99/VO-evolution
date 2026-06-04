@@ -59,9 +59,6 @@ cd VO-evolution
 pip install pandas numpy scipy matplotlib seaborn jupyter requests flask
 `
 
-## Ús
-
-`ash
 # Descarregar dades
 python scripts/download_two_stations_simple.py
 

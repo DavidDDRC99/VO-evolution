@@ -37,7 +37,9 @@ VO-evolution analitza dades de **3 estacions meteorològiques**:
 ---
 
 ## Estructura
+
 '''
+
 VO-evolution/
 ├── scripts/                 # Descàrrega i processament
 ├── Seccions/                # Anàlisis (Pluges, Temperatures, Vent, Correlacions)
@@ -46,6 +48,7 @@ VO-evolution/
 ├── Raw Data/                # Dades originals
 ├── Data collection.ipynb    # Notebook de descàrrega
 └── data_preparation.ipynb   # Neteja i concatenació
+
 '''
 ---
 

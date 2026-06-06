@@ -55,7 +55,7 @@ VO-evolution/
 ## Instal·lació
 
 ```
-ash
+bash
 git clone https://github.com/DavidDDRC99/VO-evolution.git
 cd VO-evolution
 pip install pandas numpy scipy matplotlib seaborn jupyter requests flask

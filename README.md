@@ -39,7 +39,7 @@ VO-evolution analitza dades de **3 estacions meteorològiques**:
 ## Estructura
 
 `
-VO-evolution/
+VO-evolution/ \n
 ├── scripts/                              # Descàrrega i processament
 ├── Seccions/                             # Anàlisis (Pluges, Temperatures, vent, Correlacions)
 ├── dashboard/                            # Dashboard web (Flask)

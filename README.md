@@ -54,11 +54,12 @@ VO-evolution/
 
 ## Instal·lació
 
-`ash
+```
+ash
 git clone https://github.com/DavidDDRC99/VO-evolution.git
 cd VO-evolution
 pip install pandas numpy scipy matplotlib seaborn jupyter requests flask
-`
+```
 
 # Descarregar dades
 python scripts/download_two_stations_simple.py

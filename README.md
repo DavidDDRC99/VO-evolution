@@ -1,10 +1,14 @@
-# VO-evolution
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![MeteoCat](https://img.shields.io/badge/API-MeteoCat-005A9E?style=for-the-badge)
 
-<p align="center">
-  <img src="banner.png" alt="VO-evolution banner" width="600">
-</p>
+![Banner](https://raw.githubusercontent.com/DavidDDRC99/VO-evolution/main/banner.png)
 
-Anàlisi climàtica del **Vallès Occidental** (Sabadell, Vacarisses, Terrassa) durant els últims ~30 anys. El projecte descarrega dades meteorològiques de les estacions de Meteocat, les neteja, i les analitza des de múltiples perspectives: pluges, temperatures, sequera, correlacions entre variables, i downscaling mitjançant machine learning.
+Anàlisi climàtica del **Vallès Occidental** (Sabadell, Vacarisses, Terrassa) durant els últims ~30 anys. El projecte descarrega dades meteorològiques de les estacions de [MeteoCat](https://www.meteo.cat/), les neteja, i les analitza des de múltiples perspectives: pluges, temperatures, sequera, correlacions entre variables, i downscaling mitjançant machine learning.
 
 ---
 
@@ -125,14 +129,12 @@ VO-evolution/
    ```bash
    # Opció A: Descarrega completa (~2.5h)
    python scripts/download_two_stations_simple.py
-
    # Opció B: Pas a pas amb notebooks
    # Obrir Data collection.ipynb al Jupyter
    ```
 
 4. **Processar i analitzar:**
    ```bash
-   # Notebooks d'anàlisi
    jupyter notebook Seccions/Pluges/
    jupyter notebook Seccions/Temperatures/
    jupyter notebook Seccions/Sequera/
@@ -146,12 +148,6 @@ VO-evolution/
 
 ---
 
-## Dependències Principals
-
-`numpy`, `pandas`, `scipy`, `matplotlib`, `seaborn`, `plotly`, `dash`, `scikit-learn`, `xgboost`, `statsmodels`, `spei`, `requests`, `beautifulsoup4`, `nbformat`, `tqdm`
-
----
-
 ## Resultats Clau
 
 | Àmbit | Troballa principal |
@@ -161,3 +157,11 @@ VO-evolution/
 | **Expansió estiu** | L'estiu s'ha allargat ~X dies als últims 18 anys |
 | **Downscaling ML** | MLP prediu la corba de temperatura 30 min amb RMSE 1.15–1.18°C |
 | **Sequera** | SPEI a múltiples escales temporals per les 3 estacions |
+
+---
+
+## Autor
+
+**David Domínguez Ruiz** · [LinkedIn](https://www.linkedin.com/in/david-dominguez-ruiz-8720961a3) · [GitHub](https://github.com/DavidDDRC99) · davidddrc99@gmail.com
+
+*Dades obertes del [Servei Meteorològic de Catalunya (MeteoCat)](https://www.meteo.cat/)*

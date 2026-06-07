@@ -15,3 +15,25 @@ Yes: If a plan or decision is ambiguous, ask a clarifying question before implem
 - `scripts/inject_stat_tests.py` — Injects statistical analysis cells into notebooks.
 - To add stat tests to all notebooks: `python scripts/inject_stat_tests.py` from project root.
 - Notebooks modified: Rain_seasons, Hourly_rain_analysis, Intensity_pluja, Evolucio_temperatures_nocturnes.
+
+## Drought analysis module (added 2026-06-04)
+
+- `scripts/drought_analysis.py` — Reusable module for drought analysis:
+  - `thornthwaite_pet()`: Calculate PET using Thornthwaite (1948) method
+  - `compute_drought_indices()`: Compute SPI and SPEI at multiple timescales
+  - `detect_drought_events()`: Identify individual drought events
+  - `drought_statistics()`: Compute annual drought statistics
+  - `full_analysis()`: Run complete analysis for one station
+- Dependencies: `spei` package (install with `pip install spei`)
+- `Seccions/Sequera/Drought_analysis.ipynb` — Interactive notebook with detailed explanations
+
+## Housekeeping fixes (2026-06-05)
+
+- `.gitignore` now excludes `.venv/`, `.env/`, `*.csv`, `Raw Data/`, `Cleaned Data/`
+- `scripts/inject_stat_tests.py`: removed hardcoded absolute path, uses `os.path.abspath(__file__)` instead; fixed notebook paths to match actual directory structure (`Seccions/Pluges/`, `Seccions/Temperatures/`)
+- `requirements.txt` at project root with all dependencies (dashboard + scripts + notebooks)
+- `dashboard/utils.py`: fixed `count_above_threshold` pandas deprecation warning
+- `tests/` directory added with:
+  - `test_utils.py` — 7 tests for summer/winter/night masks, season assignment, night classification, streaks
+  - `test_statistical.py` — 9 tests for Mann-Kendall, Sen's slope, Pettitt, seasonal MK
+  - Run with: `python -m pytest tests/` from project root

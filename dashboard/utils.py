@@ -67,8 +67,8 @@ NIGHT_TYPE_ORDER = ['Fresca (≤20°C)', 'Tropical (>20°C)',
 
 
 def count_above_threshold(data, col, threshold):
-    yearly = data.groupby('year').apply(
-        lambda g: (g[col] > threshold).sum()
+    yearly = data.groupby('year')[col].apply(
+        lambda g: (g > threshold).sum()
     ).reset_index()
     yearly.columns = ['year', 'count']
     return yearly

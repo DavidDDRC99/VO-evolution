@@ -6,7 +6,7 @@ Run: python scripts/inject_stat_tests.py
 import nbformat as nbf
 import os
 
-PROJECT = r"C:\Users\David\Documents\VO project\VO-evolution"
+PROJECT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCRIPTS = os.path.join(PROJECT, "scripts")
 
 
@@ -377,10 +377,10 @@ def inject(notebook_path, cells):
 
 if __name__ == '__main__':
     notebooks = {
-        os.path.join(PROJECT, 'Seccions', 'Pluges_a_les_diferents_estacions', 'Rain_seasons.ipynb'): RAIN_CELLS,
-        os.path.join(PROJECT, 'Seccions', 'Pluges_a_les_diferents_estacions', 'Hourly_rain_analysis.ipynb'): HOURLY_CELLS,
-        os.path.join(PROJECT, 'Seccions', 'Pluges_a_les_diferents_estacions', 'Intensity_pluja.ipynb'): INTENSITY_CELLS,
-        os.path.join(PROJECT, 'Seccions', 'Tempereatures_a_la_nit', 'Evolucio_temperatures_nocturnes.ipynb'): TEMP_CELLS,
+        os.path.join(PROJECT, 'Seccions', 'Pluges', 'Rain_seasons.ipynb'): RAIN_CELLS,
+        os.path.join(PROJECT, 'Seccions', 'Pluges', 'Hourly_rain_analysis.ipynb'): HOURLY_CELLS,
+        os.path.join(PROJECT, 'Seccions', 'Pluges', 'Intensity_pluja.ipynb'): INTENSITY_CELLS,
+        os.path.join(PROJECT, 'Seccions', 'Temperatures', 'Evolucio_temperatures_nocturnes.ipynb'): TEMP_CELLS,
     }
 
     for path, cells in notebooks.items():
